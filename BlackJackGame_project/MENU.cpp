@@ -1,6 +1,7 @@
 #include "CommonDec.h"
 #include "MENU.h"
 #include "PLAYER.h"
+#include "BlackJack.h"
 
 void MENU::ShowIntro()
 {
@@ -55,9 +56,23 @@ void MENU::ShowMenu()
 
 void MENU::Game(PLAYER& user)
 {
+	int batting;
 	cout << "♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤" << '\n' << '\n';
 	cout << " 블랙잭 게임을 시작합니다." << '\n' << '\n';
 	cout << " 현재 보유 금액 : ";
-	
+	user.ShowMoney();
+	cout << " 배팅할 금액을 입력하세요 : ";
+	cin >> batting;
+	cout << '\n' << '\n';
 
+	while (user.GetMoney() < batting) // 금액 부족 시
+	{
+		cout << " 금액이 부족합니다. 배팅할 금액을 다시 입력해주세요." << '\n';
+		cout << " 배팅할 금액을 입력하세요 : ";
+		cin >> batting;
+	}
+	
+	cout << ' ' << batting << "원을 배팅하셨습니다." << '\n';
+	cout << " 블랙잭 게임을 시작하겠습니다." << '\n' << '\n';
+	MainGame(user, batting);
 }
