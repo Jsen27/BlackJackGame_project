@@ -1,13 +1,12 @@
 #pragma once
-#include "MENU.h"
 
 class PLAYER
 {
 private:
 	int money;
-	int num = 0;
+	int num;
 public:
-	PLAYER(int n) :money(n) {};
-	int draw(int n);
+	PLAYER() { money = 100000; num = 0; };
+	//PLAYER(PLAYER& ref) { ref.money = money; ref.num = num; };
 	void ShowMoney();
 };

@@ -53,11 +53,11 @@ void MENU::ShowMenu()
 	
 }
 
-void MENU::Game()
+void MENU::Game(PLAYER& user)
 {
 	cout << "♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤" << '\n' << '\n';
 	cout << " 블랙잭 게임을 시작합니다." << '\n' << '\n';
 	cout << " 현재 보유 금액 : ";
 	
-	
+
 }

@@ -1,10 +1,11 @@
 #include "CommonDec.h"
-#include "PLAYER.h"
 #include "MENU.h"
+#include "PLAYER.h"
 
 int main(void)
 {
 	MENU menu;
+	PLAYER user;
 	int select;
 	menu.ShowIntro();
 
@@ -15,7 +16,7 @@ int main(void)
 		switch (select)
 		{
 		case 1:
-			menu.Game();
+			menu.Game(user);
 			break;
 		}
 	}
