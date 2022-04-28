@@ -21,7 +21,9 @@ class Dealer
 {
 private:
 	string patton;
-	int num;
+	int number;
 public:
-
+	Dealer() { number = 0; };
+	void GetCard(int num, int pat);
+	int Getnumber();
 };

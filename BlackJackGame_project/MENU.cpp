@@ -57,8 +57,9 @@ void MENU::ShowMenu()
 void MENU::Game(PLAYER& user)
 {
 	int batting;
+	cout << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n' << '\n';
 	cout << "♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤♣♧♠♤" << '\n' << '\n';
-	cout << " 블랙잭 게임을 시작합니다." << '\n' << '\n';
+	cout <<'\n' << '\n' << '\n'<< " 블랙잭 게임을 시작합니다." << '\n' << '\n' << '\n' << '\n' << '\n' << '\n';
 	cout << " 현재 보유 금액 : ";
 	user.ShowMoney();
 	cout << " 배팅할 금액을 입력하세요 : ";
@@ -71,8 +72,10 @@ void MENU::Game(PLAYER& user)
 		cout << " 배팅할 금액을 입력하세요 : ";
 		cin >> batting;
 	}
-	
-	cout << ' ' << batting << "원을 배팅하셨습니다." << '\n';
-	cout << " 블랙잭 게임을 시작하겠습니다." << '\n' << '\n';
+	cout << '\n' << '\n' << '\n' << '\n' << '\n';
+	cout << ' ' << batting << "원을 배팅하셨습니다." << '\n' << '\n';
+	cout << " 블랙잭 게임을 시작하겠습니다." << '\n' << '\n' << '\n';
+	cout << "                       ★아무키나 누르세요★" << '\n';
+	_getch();
 	MainGame(user, batting);
 }
