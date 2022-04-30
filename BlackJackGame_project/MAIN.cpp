@@ -18,6 +18,18 @@ int main(void)
 		case 1:
 			menu.Game(user);
 			break;
+		case 2:
+			menu.Wallet(user);
+			break;
+		case 3:
+			menu.Rule();
+			break;
+		case 4:
+			menu.Bank(user);
+			break;
+		case 5:
+			menu.Close();
+			return 0;
 		}
 	}
 

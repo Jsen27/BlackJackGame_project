@@ -65,16 +65,18 @@ void PLAYER::Gameset()
 
 void PLAYER::Gamelose(int batmoney)
 {
+	cout << '\n' << '\n' << '\n';
 	cout << " 이번 게임에 배팅한 금액 : " << batmoney << '\n' << '\n';
 	money -= batmoney;
-	cout << " 현재 보유 금액 : " << money << '\n' << '\n';
+	cout << " 현재 보유 금액 : " << money << '\n' << '\n' << '\n' << '\n' << '\n';
 }
 
 void PLAYER::Gamewin(int batmoney)
 {
+	cout << '\n' << '\n' << '\n';
 	cout << " 이번 게임에 배팅한 금액 : " << batmoney << '\n' << '\n';
 	money += batmoney;
-	cout << " 현재 보유 금액 : " << money << '\n' << '\n';
+	cout << " 현재 보유 금액 : " << money << '\n' << '\n' << '\n' << '\n' << '\n';
 }
 
 void Dealer::GetCard(int num, int pat)
@@ -121,4 +123,9 @@ void Dealer::GetCard(int num, int pat)
 int Dealer::Getnumber()
 {
 	return number;
+}
+
+void PLAYER::Bank(int bankmoney)
+{
+	money += bankmoney;
 }

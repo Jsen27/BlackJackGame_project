@@ -15,6 +15,7 @@ public:
 	void Gameset();
 	void Gamelose(int batmoney);
 	void Gamewin(int batmoney);
+	void Bank(int bankmoney);
 };
 
 class Dealer
