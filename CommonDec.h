@@ -1,8 +1,12 @@
 #pragma once
 #include <iostream>
 #include <string>
-#include <conio.h> //_getch() Çì´õÆÄÀÏ
-#include <cstdlib> // rand(), srand() Çì´õÆÄÀÏ
-#include <ctime>   // time() Çì´õÆÄÀÏ
+//#include <conio.h> //_getch() í—¤ë”íŒŒì¼
+#include <cstdlib> // rand(), srand() í—¤ë”íŒŒì¼
+#include <ctime>   // time() í—¤ë”íŒŒì¼
+#include<unistd.h>
+#include<termios.h>
 
 using namespace std;
+
+int _getch(void);
