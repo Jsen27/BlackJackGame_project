@@ -6,11 +6,13 @@
 
 ## 게임 플레이 영상
 
-[녹화_2022_05_02_18_33_04_4.mp4](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ee9a873c-704b-4fed-80fa-b05b81ff3786/녹화_2022_05_02_18_33_04_4.mp4)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/87853922/203008377-d9e83365-1626-4715-8b72-40fc56524c72.gif">
+</p>
 
 ## 기능
 
----
+
 
 ### 1. 본게임
 
